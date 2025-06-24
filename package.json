@@ -1,9 +1,0 @@
-
-{
-  "name": "siren-backend-vercel",
-  "version": "1.0.0",
-  "main": "api/verifier.js",
-  "dependencies": {
-    "node-fetch": "^2.6.7"
-  }
-}
