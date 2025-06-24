@@ -25,7 +25,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const apiResponse = await fetch(`https://api.insee.fr/entreprises/sirene/V3/unitesLegales/${siren}`, {
+      const apiResponse = await fetch(`https://api.insee.fr/entreprises/sirene/V3/unites_legales/${siren}`, {
       headers: {
         "Authorization": `Bearer ${access_token}`,
         "Accept": "application/json"
