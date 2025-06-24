@@ -22,12 +22,12 @@ export default async function handler(req, res) {
   }
 
   try {
-    const apiResponse = await fetch(`https://api.insee.fr/entreprises/sirene/V3/siren/${siren}`, {
-      method: "GET",
-      headers: {
-        "Authorization": `Bearer ${access_token}`,
-        "Accept": "application/json"
-      }
+const inseeResponse = await fetch(`https://api.insee.fr/entreprises/sirene/V3/unitesLegales/${siren}`, {
+  headers: {
+    Authorization: `Bearer ${accessToken}`,
+    Accept: 'application/json'
+  }
+})
     });
 
     if (!apiResponse.ok) {
